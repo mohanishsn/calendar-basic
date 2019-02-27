@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signzy Assignment - FrontEnd Intern</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="calendar">
+            <div class="cal-head">
+                <button class="prev" id="prev" onClick="prevMonth();">Previous</button>
+                <h3 id="month-year"></h3>
+                <button class="next" id="next" onClick="nextMonth();">Next</button>
+            </div>
+            <table id="cal-main" border="1">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="cal-body">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
