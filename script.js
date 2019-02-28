@@ -63,7 +63,7 @@ $(document).ready(function () {
     document.getElementById('prev').addEventListener('click', prevMonth, false);
     function prevMonth() {
         currYear = currMonth === 0 ? currYear - 1 : currYear;
-        currMonth = currMonth - 1;
+        currMonth = currMonth === 0 ? 11 : currMonth - 1;
         showCalendar(currMonth, currYear);
     }
 });
