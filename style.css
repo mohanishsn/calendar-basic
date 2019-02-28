@@ -23,6 +23,10 @@ div.cal-head {
     justify-content: space-around;
 }
 
+.cal-head h3 {
+    color: cornsilk;
+}
+
 .next,
 .prev {
     background: none;
