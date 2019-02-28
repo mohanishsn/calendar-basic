@@ -56,7 +56,7 @@ $(document).ready(function () {
     document.getElementById('next').addEventListener('click', nextMonth, false);
     function nextMonth() {
         currYear = currMonth === 11 ? currYear + 1 : currYear;
-        currMonth = currMonth + 1;
+        currMonth = currMonth === 11 ? 0 : currMonth + 1;
         showCalendar(currMonth, currYear);
     }
 
